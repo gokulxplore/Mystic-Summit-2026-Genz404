@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#071426">
+  <title>GENZ CLUB | Community Innovation Platform</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar">
+      <a class="brand" href="#" aria-label="GENZ CLUB home">
+        <span class="brand-mark">G<span>+</span></span>
+        <span><strong>GENZ CLUB</strong><small>INNOVATION NETWORK</small></span>
+      </a>
+
+      <div class="workspace-label">WORKSPACE</div>
+      <nav class="main-nav" aria-label="Main navigation">
+        <button class="nav-link active" data-view="overview"><span class="nav-icon">◫</span> Overview</button>
+        <button class="nav-link" data-view="citizen"><span class="nav-icon">◎</span> Citizen Portal</button>
+        <button class="nav-link" data-view="verification"><span class="nav-icon">✓</span> Verification Desk</button>
+        <button class="nav-link" data-view="university"><span class="nav-icon">⌂</span> University Portal</button>
+        <button class="nav-link" data-view="industry"><span class="nav-icon">◇</span> Industry Portal</button>
+        <button class="nav-link" data-view="government"><span class="nav-icon">▤</span> Government Dashboard</button>
+      </nav>
+
+      <div class="sidebar-bottom">
+        <div class="team-card">
+          <div class="team-avatar">404</div>
+          <div><strong>GENZ 404</strong><small>Hackathon Team</small></div>
+          <span class="online-dot"></span>
+        </div>
+        <p class="sidebar-note">A prototype by GENZ 404<br>SIH26043 · 2026</p>
+      </div>
+    </aside>
+
+    <main class="main-area">
+      <header class="topbar">
+        <div class="mobile-brand"><span class="brand-mark">G<span>+</span></span><strong>GENZ CLUB</strong></div>
+        <div class="breadcrumb"><span>Workspace</span><b>/</b><strong id="breadcrumb-current">Overview</strong></div>
+        <div class="topbar-right">
+          <span class="live-pill"><i></i> DEMO MODE</span>
+          <button class="profile-button" id="profile-button" title="Demo profile">G</button>
+        </div>
+      </header>
+
+      <div class="content-wrap">
+        <section class="view active" id="view-overview">
+          <div class="hero-panel">
+            <div class="hero-copy">
+              <div class="eyebrow"><span class="eyebrow-line"></span> COMMUNITY-POWERED INNOVATION</div>
+              <h1>Local problems.<br><span>Collective solutions.</span></h1>
+              <p>Connect citizens, universities, industry, and government to turn real-world challenges into measurable impact.</p>
+              <div class="hero-actions">
+                <button class="btn btn-primary" data-go="citizen">Submit a challenge <span>↗</span></button>
+                <button class="btn btn-ghost" data-go="government">Explore dashboard</button>
+              </div>
+            </div>
+            <div class="hero-art" aria-hidden="true">
+              <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+              <div class="orbit-core"><span>G+</span></div>
+              <div class="orbit-node node-a">◎</div><div class="orbit-node node-b">⌂</div>
+              <div class="orbit-node node-c">◇</div><div class="orbit-node node-d">✓</div>
+              <div class="art-caption">ONE NETWORK<br><b>SHARED IMPACT</b></div>
+            </div>
+            <div class="hero-glow"></div>
+          </div>
+
+          <div class="section-heading">
+            <div><div class="eyebrow">PLATFORM SNAPSHOT</div><h2>Impact at a glance</h2></div>
+            <span class="muted-label">Updates as you use the demo</span>
+          </div>
+          <div class="stats-grid">
+            <article class="stat-card"><div class="stat-top"><span>Total challenges</span><span class="stat-icon blue">◎</span></div><strong id="stat-total">0</strong><small>Community submissions</small></article>
+            <article class="stat-card"><div class="stat-top"><span>Under review</span><span class="stat-icon amber">◷</span></div><strong id="stat-review">0</strong><small>Awaiting verification</small></article>
+            <article class="stat-card"><div class="stat-top"><span>Solutions proposed</span><span class="stat-icon purple">✧</span></div><strong id="stat-solutions">0</strong><small>University contributions</small></article>
+            <article class="stat-card"><div class="stat-top"><span>Supported projects</span><span class="stat-icon green">↗</span></div><strong id="stat-supported">0</strong><small>Industry-backed solutions</small></article>
+          </div>
+
+          <div class="dashboard-grid">
+            <article class="panel recent-panel">
+              <div class="panel-heading"><div><div class="eyebrow">LIVE FEED</div><h3>Recent challenges</h3></div><button class="text-button" data-go="verification">View all ↗</button></div>
+              <div id="recent-challenges" class="empty-state compact"><span class="empty-symbol">◎</span><strong>No challenges yet</strong><p>Submit the first community challenge to see it here.</p></div>
+            </article>
+            <article class="panel process-panel">
+              <div class="eyebrow">HOW IT WORKS</div><h3>From challenge to change</h3>
+              <div class="process-step"><span class="step-number">01</span><div><strong>Citizens report</strong><small>Share a local issue with context.</small></div></div>
+              <div class="process-step"><span class="step-number">02</span><div><strong>Reports are verified</strong><small>Review and prioritize submissions.</small></div></div>
+              <div class="process-step"><span class="step-number">03</span><div><strong>Universities solve</strong><small>Submit practical solution proposals.</small></div></div>
+              <div class="process-step"><span class="step-number">04</span><div><strong>Industry enables</strong><small>Offer support and expertise.</small></div></div>
+            </article>
+          </div>
+          <div class="prototype-notice"><span>ⓘ</span><p><strong>Prototype note:</strong> This demo stores information in this browser only. Use the Reset demo button in the footer to clear sample data.</p></div>
+        </section>
+
+        <section class="view" id="view-citizen">
+          <div class="page-heading"><div><div class="eyebrow">CITIZEN PORTAL</div><h1>Raise a community challenge</h1><p>Your observation can be the starting point for a better solution.</p></div><span class="page-icon">◎</span></div>
+          <div class="form-layout">
+            <form class="panel form-panel" id="challenge-form">
+              <div class="panel-heading"><div><h3>Challenge details</h3><p>Share clear information so the right people can respond.</p></div><span class="required-note">* Required</span></div>
+              <label for="citizen-name">Your name <span>*</span></label><input id="citizen-name" name="name" placeholder="Enter your name" required maxlength="60">
+              <label for="challenge-title">Challenge title <span>*</span></label><input id="challenge-title" name="title" placeholder="e.g. Poor street lighting near bus stop" required maxlength="100">
+              <div class="field-row">
+                <div><label for="challenge-category">Category <span>*</span></label><select id="challenge-category" name="category" required><option value="">Select category</option><option>Water & Sanitation</option><option>Roads & Transport</option><option>Waste Management</option><option>Public Safety</option><option>Education</option><option>Healthcare</option><option>Environment</option><option>Other</option></select></div>
+                <div><label for="challenge-location">Location <span>*</span></label><input id="challenge-location" name="location" placeholder="Area, city" required maxlength="100"></div>
+              </div>
+              <label for="challenge-description">Describe the challenge <span>*</span></label><textarea id="challenge-description" name="description" rows="5" placeholder="What is happening? Who is affected? When does it happen?" required maxlength="1000"></textarea>
+              <div class="form-foot"><small>Do not include private or sensitive personal information.</small><button class="btn btn-primary" type="submit">Submit challenge <span>↗</span></button></div>
+              <p class="form-message" id="challenge-message" role="status"></p>
+            </form>
+            <aside class="side-info">
+              <div class="info-card blue-info"><span class="info-icon">✦</span><h3>Every report matters</h3><p>Clear, specific reports help reviewers understand the issue and connect it with people who can help.</p></div>
+              <div class="info-card"><h3>What happens next?</h3><ul class="check-list"><li>Report receives a unique ID</li><li>Verification team reviews it</li><li>Eligible challenges reach universities</li><li>Progress can be tracked on the dashboard</li></ul></div>
+            </aside>
+          </div>
+        </section>
+
+        <section class="view" id="view-verification">
+          <div class="page-heading"><div><div class="eyebrow">VERIFICATION DESK</div><h1>Review community reports</h1><p>Check incoming challenges and move them through the review process.</p></div><span class="page-icon">✓</span></div>
+          <div class="toolbar"><div class="filter-tabs"><button class="filter-button active" data-filter="All">All reports</button><button class="filter-button" data-filter="Pending">Pending</button><button class="filter-button" data-filter="Verified">Verified</button><button class="filter-button" data-filter="In Progress">In progress</button></div><span class="muted-label" id="verification-count">0 reports</span></div>
+          <div id="verification-list" class="card-list"></div>
+        </section>
+
+        <section class="view" id="view-university">
+          <div class="page-heading"><div><div class="eyebrow">UNIVERSITY PORTAL</div><h1>Turn research into solutions</h1><p>Explore verified challenges and submit practical solution proposals.</p></div><span class="page-icon">⌂</span></div>
+          <div class="split-heading"><div><h2>Verified challenges</h2><p>Choose a challenge to work on.</p></div><span class="muted-label">Only verified reports appear here</span></div>
+          <div id="university-challenges" class="card-list"></div>
+          <div class="panel form-panel solution-form-wrap">
+            <div class="panel-heading"><div><h3>Submit a solution proposal</h3><p>Link your idea to a verified community challenge.</p></div></div>
+            <form id="solution-form">
+              <label for="solution-challenge">Related challenge <span>*</span></label><select id="solution-challenge" name="challengeId" required><option value="">Select a verified challenge</option></select>
+              <div class="field-row"><div><label for="university-name">University / team <span>*</span></label><input id="university-name" name="university" placeholder="Institution or team name" required maxlength="100"></div><div><label for="solution-title">Solution title <span>*</span></label><input id="solution-title" name="title" placeholder="Name your solution" required maxlength="100"></div></div>
+              <label for="solution-description">How will it work? <span>*</span></label><textarea id="solution-description" name="description" rows="4" placeholder="Explain the idea, implementation, and expected benefit." required maxlength="1200"></textarea>
+              <div class="form-foot"><small>Keep the proposal realistic and specific.</small><button class="btn btn-primary" type="submit">Submit proposal ↗</button></div>
+              <p class="form-message" id="solution-message" role="status"></p>
+            </form>
+          </div>
+          <div class="split-heading"><div><h2>Submitted proposals</h2><p>Ideas shared by participating teams.</p></div></div>
+          <div id="solution-list" class="card-list"></div>
+        </section>
+
+        <section class="view" id="view-industry">
+          <div class="page-heading"><div><div class="eyebrow">INDUSTRY PORTAL</div><h1>Help promising ideas grow</h1><p>Connect expertise, mentorship, and resources with community-focused solutions.</p></div><span class="page-icon">◇</span></div>
+          <div class="split-heading"><div><h2>Solutions seeking support</h2><p>Review proposals and register your interest.</p></div></div>
+          <div id="industry-solutions" class="card-list"></div>
+          <div class="panel form-panel support-form-wrap">
+            <div class="panel-heading"><div><h3>Register industry support</h3><p>Tell the team how your organization can contribute.</p></div></div>
+            <form id="support-form">
+              <label for="support-solution">Solution to support <span>*</span></label><select id="support-solution" name="solutionId" required><option value="">Select a solution</option></select>
+              <div class="field-row"><div><label for="company-name">Company / organization <span>*</span></label><input id="company-name" name="company" placeholder="Organization name" required maxlength="100"></div><div><label for="support-type">Support type <span>*</span></label><select id="support-type" name="type" required><option value="">Choose support</option><option>Mentorship</option><option>Technical expertise</option><option>Equipment / resources</option><option>Pilot opportunity</option><option>Funding discussion</option></select></div></div>
+              <label for="support-note">Additional details</label><textarea id="support-note" name="note" rows="3" placeholder="Briefly describe your offer (optional)." maxlength="600"></textarea>
+              <div class="form-foot"><small>Submitting records a demo expression of interest.</small><button class="btn btn-primary" type="submit">Register support ↗</button></div>
+              <p class="form-message" id="support-message" role="status"></p>
+            </form>
+          </div>
+          <div class="split-heading"><div><h2>Support activity</h2><p>Registered expressions of interest.</p></div></div>
+          <div id="support-list" class="card-list"></div>
+        </section>
+
+        <section class="view" id="view-government">
+          <div class="page-heading"><div><div class="eyebrow">GOVERNMENT DASHBOARD</div><h1>Monitor community impact</h1><p>A consolidated view of reports, solution activity, and support commitments.</p></div><span class="page-icon">▤</span></div>
+          <div class="stats-grid government-stats">
+            <article class="stat-card"><div class="stat-top"><span>All reports</span><span class="stat-icon blue">◎</span></div><strong id="gov-total">0</strong><small>Submitted by citizens</small></article>
+            <article class="stat-card"><div class="stat-top"><span>Verified</span><span class="stat-icon green">✓</span></div><strong id="gov-verified">0</strong><small>Passed initial review</small></article>
+            <article class="stat-card"><div class="stat-top"><span>Proposals</span><span class="stat-icon purple">✧</span></div><strong id="gov-solutions">0</strong><small>University solutions</small></article>
+            <article class="stat-card"><div class="stat-top"><span>Support entries</span><span class="stat-icon amber">◇</span></div><strong id="gov-support">0</strong><small>Industry interest</small></article>
+          </div>
+          <div class="dashboard-grid">
+            <article class="panel"><div class="panel-heading"><div><div class="eyebrow">REPORT PIPELINE</div><h3>Challenge status</h3></div></div><div id="status-breakdown" class="bar-list"></div></article>
+            <article class="panel"><div class="panel-heading"><div><div class="eyebrow">CATEGORY VIEW</div><h3>Reports by category</h3></div></div><div id="category-breakdown" class="bar-list"></div></article>
+          </div>
+          <article class="panel table-panel"><div class="panel-heading"><div><div class="eyebrow">OVERSIGHT</div><h3>All community challenges</h3></div><button class="text-button" data-go="verification">Open review desk ↗</button></div><div class="table-scroll"><table><thead><tr><th>Challenge</th><th>Category</th><th>Location</th><th>Status</th><th>Submitted</th></tr></thead><tbody id="government-table"></tbody></table></div></article>
+        </section>
+
+        <footer class="footer"><span>© 2026 GENZ CLUB · Built by GENZ 404</span><button id="reset-demo" class="reset-button">Reset demo data</button></footer>
+      </div>
+    </main>
+  </div>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  <script src="app.js"></script>
+</body>
+</html>
